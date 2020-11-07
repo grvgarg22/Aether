@@ -1,0 +1,674 @@
+//**************** Variables
+$f-fam			:			'Montserrat', sans-serif;
+$accent			:			#a8eb12;
+$light			:			300;
+$regular		:			400;
+$medium			:			500;
+$semi-bold		:			600;
+$bold			:			700;
+
+
+//***************** Global
+body {font-family: 'Montserrat', sans-serif; margin: 0;}
+div, nav {height: auto; overflow: auto;}
+p, h1, h2, h3, h4, h5, h6 {margin: 0;}
+a {text-decoration: none;}
+.active {color: $accent !important;}
+.container-fluid {width: 100%; height: 100vh;}
+.grid_half {width: 50%;}
+.grid_quart {width: 25%;}
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+.margin-btm {margin-bottom: 1.5rem;}
+.section_title {margin: 2rem; font-size: 4rem; font-weight: $regular; color: #fff;}
+.prev_page {position: absolute; top: 3rem; display: flex; justify-content: center; left: 0; right: 0; z-index: 1000;
+	img {width: 2rem;}
+}
+.next_page {position: absolute; bottom: 2rem; display: flex; justify-content: center; left: 0; right: 0; z-index: 1000;
+	img {width: 2rem;}
+}
+* {box-sizing: border-box;}
+.download_link {display: flex; flex-wrap: nowrap; justify-content: end; align-items: center; margin: 0.5rem 2rem;
+	span {color: #000; font-size: 1rem; font-weight: $regular;}
+	img {width: 2rem; background-color: #474747; border-radius: 5rem; padding: 0.375rem; margin-left: 0.5rem; transform: rotate(270deg);}
+}
+.responsive_menu {display: none;}
+
+//**************** Header
+.nav {position: fixed; top: 0; z-index: 999; width: 100%; left: 0; right: 0; display: inline-table;
+	.nav_left, .nav_right {height: auto; float: left; width: 50%;}
+	.nav_menu {list-style: none; padding: 0.5rem 1rem;
+		.nav_item {display: inline-block; margin: 0 0.5rem;
+			.nav_link {color: #fff; text-transform: capitalize;}
+		}
+	}
+	.hamburger {background: none; position: absolute; top: 0; right: 1rem; z-index: 999; line-height: 3rem; padding: 0.5rem 1rem; color: #a8eb12; border: 0; font-size: 2rem; outline: none; cursor: pointer;}
+	.cross {background: none; position: absolute; top: 0px; right: 1rem; padding: 0.5rem 1rem; color: $accent; border: 0; font-size: 2rem; line-height: 3rem; font-weight: bold; cursor: pointer; outline: none; z-index: 999;}
+	.hamburger-menu-list {z-index: 999; font-weight: $light; background: none; position:absolute; text-align: right; font-size: 0.8rem; right: 1rem; top: 3rem;
+		ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;
+			li {margin: 0.7rem;
+				a {background-color:rgba(0, 0, 0, 0.3); color: #fff; padding: 0.25rem;}
+			}
+			li:first-child a {background-color: #fff; color: #000;}
+			li:last-child span {background-color: rgba(0, 0, 0, 0.3); color: $accent; border-bottom: 1px solid $accent; padding: 0.25rem;}
+		}
+	}
+}
+
+//***************** Home Page
+.aether_hm_pg {
+	.grid_half:first-child {background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+	.grid_half:first-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end;}
+	.grid_half:last-child {background:rgba(5, 25, 55, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-image: url(../img/1robust.png); background-position-y: 0; position: relative; overflow: hidden;}
+	.grid_half:last-child .hm_pg_right_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(5, 25, 55, 0.35); height: 100vh; display: flex; align-items: flex-end;}
+	.section_title {
+		a {color: #fff;}
+	}
+}
+
+//***************** Product Page
+.aether_product_pg {scroll-behavior: smooth;
+	#about_zeus {position: relative; background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 46%; background-position-y: -16rem; background-position-x: 0rem; background-image: url(../img/5our-product.png); overflow: hidden;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem;}
+		.well {width: 50%; margin: 5rem; text-align: right;
+			h2 {width: 15rem; text-align: right; margin-left: auto; color: #fff; font-size: 2rem; font-weight: $regular; margin: 1rem 0 1rem auto;}
+			.section_text {margin: 1rem 0; color: #fff; font-weight: $light; line-height: 1.6;}
+			.section_text.unq {width: 65%; margin-left: auto;}
+		}
+	}
+	.section_1 {position: relative; height: 100vh;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem; z-index: 999;}
+		.grid_quart.first{background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 125%; background-position-y: 1.5rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+		.grid_quart.second{background:rgba(5, 25, 55, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 200%; background-image: url(../img/1robust.png); background-position-y: 0; position: relative; overflow: hidden;}
+		.grid_quart.third{background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 100%; background-position-y: -5rem; background-position-x: 0rem; background-image: url(../img/3designed.png); position: relative; overflow: hidden;}
+		.grid_quart.fourth{background:rgba(5, 25, 55, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 100%; background-image: url(../img/2practical2.png); background-position-y: 0; position: relative; overflow: hidden;}
+		.grid_quart {
+			.well {display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: end; position: absolute; padding: 1rem; line-height: 1.6; color: #fff; top: 0; bottom: 0;
+				h3 {font-size: 2rem; font-weight: $regular;}
+				p {font-weight: $light;}
+			}
+		}
+		.section_overlay {position: absolute; left: 0; right: 0; top: 10rem; display: flex; justify-content: center; font-size: 2rem; font-weight: $light; color: #fff; z-index: 999;}
+	}
+	.section_2 {position: relative; background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 46%; background-position-y: -16rem; background-position-x: 0rem; background-image: url(../img/5our-product.png); overflow: hidden;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem;}
+		.section_text::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: #03bbcc;}
+		.section_text::-webkit-scrollbar {width: 3px; background-color: transparent;}
+		.section_text::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: #fff;}
+		.well {width: 50%; margin: 5rem; text-align: right;
+			h3 {text-align: right; margin-left: auto; color: #fff; font-size: 2rem; font-weight: $regular; margin: 1rem 0 1rem auto;}
+			.section_text {margin: 1rem 0; color: #fff; font-weight: $light; line-height: 1.6;width: 80%; margin-left: auto; height: 7rem; overflow: auto; padding: 0 1rem;}
+		}
+		.product_thumbnails {padding: 2rem 0 2rem 2rem; position: relative;
+			.card {width: 45%; margin-left: 2rem; position: relative;
+				.card-img {width: 100%;}
+				.img-overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.726);}
+			}
+			.card_main {position: absolute; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; width: 95%;
+				.card-img {width: 60%; background-color: #fff;}
+			}
+		}
+	}
+}
+
+//***************** f.a.q. Page
+.aether_faq_pg{
+	.faq_section {position: relative; background: #102951; height: 100vh; overflow: hidden;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem; color: $accent;}
+		.well {width: 90%; margin: 7rem auto 2rem; height: 60vh; overflow: auto;
+			h2 {width: 15rem; text-align: right; margin-left: auto; color: #fff; font-size: 2rem; font-weight: $regular; margin: 1rem 0 1rem auto;}
+			.section_text {margin: 1rem 0; color: #fff; font-weight: $light; line-height: 1.6; font-weight: $light;}
+			.section_text.unq {width: 65%; margin-left: auto;}
+			.ques_ans {padding: 0.5rem 1rem;
+				.accordion {background-color: transparent; color: #fff; cursor: pointer; padding: 0.5rem 1rem; width: 100%; border: none; text-align: left; outline: none; font-size: 1.5rem; transition: 0.4s;
+					span {float: left; margin-right: 2rem;}
+					img {width: 1rem; margin: 0.375rem 2rem;}
+					.close_accord {display: none;}
+					.open_accord {display: block;}
+				}
+				.accordion.active {
+					.close_accord {display: block;}
+					.open_accord {display: none;}
+				}
+				.accordion:hover {color: $accent;}
+				.panel {padding: 0 1rem; background-color: transparent; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;
+					p {color: #ccc; font-weight: $light; line-height: 1.6;}
+				}
+			}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: #365a42;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: $accent;}
+	}
+}
+
+//***************** Support Page
+.aether_support_pg {position: relative; background: #008793; height: 100vh; overflow: hidden;
+	.section_title {position: absolute; bottom: 1rem; left: 1rem; color: $accent;}
+	.support_info {margin: 7rem 1rem; padding: 2rem;
+		p {color: #fff; font-weight: $light;}
+	}
+	.support_form {margin: 6rem 1rem; padding: 2rem 5rem;
+		form {display: block;
+			.form-group {margin: 0.5rem 0;
+				label {display: inline-block; margin: .375rem .275rem; color: #fff;}
+				.form-control {display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: $f-fam;}
+				.form-control:focus {color: #495057; background-color: #fff; border-color: $accent; outline: 0; box-shadow: 0 0 0 0.2rem $accent;}
+				textarea {overflow: auto; resize: vertical;}
+			}
+			.row {display: flex; flex-wrap: wrap; justify-content: space-between;
+				.form-group {width: 48%;
+					label {margin: .375rem 0;}
+					.form-control {width: 98%; margin: auto;}
+				}
+			}
+			button {margin: 0.5rem 0.5rem; border: none; background-color: $accent; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer;}
+			button:focus, button:hover {outline: none; background-color: darken($accent, 4%);}
+		}
+	}
+}
+
+//***************** Privacy Policy Page
+.aether_pp_pg {
+	.policy_section {position: relative; background: #102951; height: 100vh; overflow: hidden;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem; color: $accent;}
+		.well {width: 90%; margin: 7rem auto 2rem; height: 60vh; overflow: auto;
+			p {color: #fff; font-weight: $light; line-height: 1.6; margin-right: 3rem;}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: #365a42;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: $accent;}
+	}
+}
+
+//***************** Terms & Conditions Page
+.aether_t_c_pg {
+	.terms_section {position: relative; background: #008793; height: 100vh; overflow: hidden;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem; color: $accent;}
+		.well {width: 90%; margin: 8rem auto 2rem; height: 60vh; overflow: auto;
+			p {color: #fff; font-weight: $light; line-height: 1.6; margin-right: 3rem;}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: #365a42;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: $accent;}
+	}
+}
+
+//***************** Downloads Page
+.aether_download_pg {
+	.downloads_section {position: relative; background: #008793; height: 100vh; overflow: hidden;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem; color: $accent;}
+		.well {width: 90%; margin: 8rem auto 2rem; height: 60vh; overflow: auto;
+			p {color: #fff; font-weight: $light; line-height: 1.6; margin-right: 3rem;}
+			ul {list-style: none; padding: 0; width: 80%; margin: 2rem auto; height: auto; overflow: auto;
+				li {margin: 0.5rem 1rem; padding: 0.5rem 1rem; width: 40%; float: left;
+					a {
+						h5 {color: #fff; font-size: 1.5rem; font-weight: $medium; width: 70%; margin: 0.5rem;}
+						img {width: 2rem; background-color: $accent; border-radius: 1rem; padding: 5px; margin: 0.375rem;}
+					}
+				}
+			}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: #365a42;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: $accent;}
+	}
+}
+
+
+//********************* About & Blog-Post
+.aether_about_pg {
+	.grid_half:first-child {background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+	.grid_half:first-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: center;
+		.section_title {color: $accent; position: absolute; bottom: 2rem; left: 2rem; margin: 0;
+			a {color: $accent;}
+		}
+		.section_sub_title {margin: 1rem 2rem; font-size: 2.5rem; font-weight: $light; color: $accent;}
+	}
+	.about_section {
+		.well {width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto;
+			h2 {font-size: 2rem; font-weight: $regular; margin-top: 0;}
+			h3 {font-size: 2rem; font-weight: $regular; margin-top: 3rem;}
+			h5 {font-weight: $semi-bold; font-size: 1rem; margin-top: 1rem; margin-bottom: 0.5rem;}
+			p {font-weight: $light; line-height: 1.6; margin-right: 3rem;
+				span {font-weight: $medium;}
+			}
+			.card {width: 40%; margin: 1rem 0.5rem; float: left; text-align: center;
+				.card-img {border-radius: 5rem; width: 70%; padding: 1rem 0;}
+				.card-title {font-size: 1rem; font-weight: $semi-bold; margin-top: 0.5rem;}
+				.card-text {margin: 0.5rem 0; font-weight: $light; font-size: 0.8rem;}
+			}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); box-shadow: inset 0 0 6px rgba(0,0,0,0.1); border-radius: 10px; background-color: #e9fac4;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1); box-shadow: inset 0 0 6px rgba(0,0,0,.1); background-color: $accent;}
+	}
+}
+
+
+//***************** Blog Page
+.aether_blog_pg {
+	.grid_half:first-child {background-color: #102951; height: 100vh;}
+	.grid_half:last-child {background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+	.grid_half:last-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 1rem;
+		.section_sub_title {color: $accent; font-size: 5rem; display: flex; flex-wrap: nowrap; align-items: center; font-weight: $light;
+			span {color: #fff; font-size: 2rem; margin-left: 0.5rem}
+		}
+		ul {list-style: none; padding: 0;
+			li {margin: 1rem 0.5rem; text-align: right;}
+			li:first-child, li:last-child {
+				a {font-size: 0.5rem; color: #fff;}
+			}
+			li:nth-child(even) {
+				a {font-size: 0.7rem; color: #fff;}
+			}
+			li.active {
+				a {font-size: 1rem; color: #fff;}
+			}
+		}
+	}
+	.grid_half:first-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; width: 50%; display: flex; align-items: center;
+		.section_title {color: $accent; position: absolute; bottom: 2rem; left: 2rem; margin: 0;}
+		.section_sub_title {margin: 1rem 2rem; font-size: 2.5rem; font-weight: $light; color: $accent;
+			a {color: #fff;}
+		}
+	}
+}
+
+
+//***************** Stories Page
+.aether_stories_pg {scroll-behavior: smooth;
+	.section:nth-child(odd) {background-image: url(../img/1robust@2x.png); background-position: right;
+		.well {text-align: left;
+			h2 {width: 15rem; text-align: left; margin-right: auto;}
+			.section_text{width: 65%; margin-right: auto;}
+		}
+	}
+	.section:nth-child(even) {
+		.well {text-align: right;
+			h2 {width: 15rem; text-align: right; margin-left: auto;}
+			.section_text {width: 65%; margin-left: auto;}
+			.card {margin-left: auto;}
+		}
+	}
+	.section {position: relative; background: #102951 0% 0% no-repeat padding-box; height: 100vh; background-size: 46%; background-image: url(../img/1robust.png); background-position-y: 0; background-position-x: 0rem; overflow: hidden;
+		.section_title {position: absolute; bottom: 1rem; left: 1rem;}
+		.well {width: 50%; margin: 5rem 4rem;
+			h2 {color: #fff; font-size: 2rem; font-weight: $regular;}
+			.section_text {margin: 1rem 0; color: #fff; font-weight: $light; line-height: 1.6; font-weight: $light;}
+			.section_text.unq {font-style: italic; font-weight: $light; width: 90%; margin-top: 1rem;}
+			.card {width: 60%;
+				.card-img {width: 100%;}
+			}
+		}
+	}
+}
+
+
+//********************* Careers Page
+.aether_career_pg {
+	.grid_half:first-child {background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+	.grid_half:first-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end;
+		.section_title {color: $accent;}
+	}
+	.career_section {
+		.well {width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto;
+			h2 {font-size: 2rem; font-weight: $regular; margin-top: 0;}
+			p {font-weight: $light; line-height: 1.6; margin-right: 3rem;}
+			.card {width: 90%;
+				.card-img {width: 100%;}
+			}
+		}
+	}
+}
+
+
+//********************* Clinicians Page
+.aether_clinicians_pg {
+	.grid_half:last-child {background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+	.grid_half:last-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end;
+		.section_title {color: $accent;}
+	}
+	.clinicians_section {
+		.well {width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto;
+			h2 {font-size: 2rem; font-weight: $regular; margin-top: 0;}
+			p {font-weight: $light; line-height: 1.6; margin-right: 3rem;}
+			.card {width: 90%;
+				.card-img {width: 100%;}
+			}
+			.card {padding: 1rem 0; margin-bottom: 1rem;
+				.accordion {font-family: $f-fam; background-color: transparent; cursor: pointer; padding: 0.5rem 0; width: 100%; border: none; text-align: left; outline: none; font-size: 1rem; transition: 0.4s;
+					span {float: left; margin-right: 0.5rem;}
+					img {width: 1rem; margin: 0.175rem 2rem;}
+					.close_accord {display: none;}
+					.open_accord {display: block;}
+				}
+				.accordion.active {
+					.close_accord {display: block;}
+					.open_accord {display: none;}
+				}
+				.accordion:hover {color: $accent;}
+				.panel {padding: 0; background-color: transparent; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;
+					p {font-weight: $light; line-height: 1.6;}
+				}
+				.card-img {margin-bottom: 2rem;}
+			}
+			h3.unq {width: 75%;}
+			h3 {font-size: 2rem; font-weight: $regular;}
+			form {display: block; width: 100%;
+				.form-group {margin: 0.5rem 0 1rem;
+					label {display: inline-block; margin: .375rem .275rem;}
+					.form-control {display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #888; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: $f-fam;}
+					.form-control:focus {color: #495057; background-color: #fff; border-color: $accent; outline: 0; box-shadow: 0 0 0 0.2rem $accent;}
+				}
+				button {margin: 0.5rem 0; border: none; background-color: #495057; color: #fff; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer;}
+				button:focus, button:hover {outline: none; background-color: $accent; color: #333;}
+			}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); box-shadow: inset 0 0 6px rgba(0,0,0,0.1); border-radius: 10px; background-color: #e9fac4;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1); box-shadow: inset 0 0 6px rgba(0,0,0,.1); background-color: $accent;}
+	}
+}
+
+
+//********************* Patients Page
+.aether_patients_pg {
+	.grid_half:first-child {background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+	.grid_half:first-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end;
+		.section_title {color: $accent;}
+	}
+	.patients_section {
+		.well {width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto;
+			h2 {font-size: 2rem; font-weight: $regular; margin-top: 0;}
+			p {font-weight: $light; line-height: 1.6; margin-right: 3rem;}
+			.card {width: 90%;
+				.card-img {width: 100%;}
+			}
+			.card {padding: 1rem 0; margin-bottom: 1rem;
+				.accordion {font-family: $f-fam; background-color: transparent; cursor: pointer; padding: 0.5rem 0; width: 100%; border: none; text-align: left; outline: none; font-size: 1rem; transition: 0.4s;
+					span {float: left; margin-right: 0.5rem;}
+					img {width: 1rem; margin: 0.175rem 2rem;}
+					.close_accord {display: none;}
+					.open_accord {display: block;}
+				}
+				.accordion.active {
+					.close_accord {display: block;}
+					.open_accord {display: none;}
+				}
+				.accordion:hover {color: $accent;}
+				.panel {padding: 0; background-color: transparent; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;
+					p {font-weight: $light; line-height: 1.6;}
+				}
+				.card-img {margin-bottom: 2rem;}
+			}
+			h3.unq {width: 75%;}
+			h3 {font-size: 2rem; font-weight: $regular;}
+			form {display: block; width: 100%;
+				.form-group {margin: 0.5rem 0 1rem;
+					label {display: inline-block; margin: .375rem .275rem; font-weight: $light;}
+					.form-control {display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #888; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: $f-fam;}
+					.form-control:focus {color: #495057; background-color: #fff; border-color: $accent; outline: 0; box-shadow: 0 0 0 0.2rem $accent;}
+				}
+				.radio_grp {margin: 1rem 0;
+					h5 {font-size: 1rem; font-weight: $regular; padding: 0.375rem}
+					.form-check {margin: 0.5rem 0;
+						label {font-weight: $light;}
+						.form-control {border-top: 0; border-left: 0; border-right: 0; border-bottom: 1px solid #888; outline: none; margin-left: 1rem; padding: 0.375rem; font-family: $f-fam;}
+					}
+				}
+				.radio_input_grp {
+					.form-check {padding: 0.375rem;
+						label {float: left;
+							p {width: 3rem;}
+						}
+						.form-control { float: left; border: 1px solid #888; padding: 0.375rem; font-family: $f-fam;}
+					}
+				}
+				button {margin: 0.5rem 0; border: none; background-color: #495057; color: #fff; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer;}
+				button:focus, button:hover {outline: none; background-color: $accent; color: #333;}
+			}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); box-shadow: inset 0 0 6px rgba(0,0,0,0.1); border-radius: 10px; background-color: #e9fac4;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1); box-shadow: inset 0 0 6px rgba(0,0,0,.1); background-color: $accent;}
+	}
+}
+
+
+//********************* Contact Page
+.aether_contact_pg {
+	.grid_half:last-child {background: rgba(0, 135, 147, 1) 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden;}
+	.grid_half:last-child .hm_pg_lft_overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end;
+		.section_title {color: $accent;}
+	}
+	.contact_section {
+		.well {width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto;
+			h2 {font-size: 2rem; font-weight: $regular; margin-top: 0;}
+			p {font-weight: $light; line-height: 1.6;}
+			.panel {width: 90%; padding: 0; background-color: transparent; overflow: hidden; transition: max-height 0.2s ease-out;
+				p {font-weight: $light; line-height: 1.6;}
+			}
+			.card {padding: 0.5rem 0; width: 90%; margin-bottom: 1rem;
+				.card-img {margin-bottom: 2rem;}
+				.card-title {font-weight: $regular; font-size: 1rem; margin-bottom: 0.5rem;}
+				.card-text {
+					p {width: 8rem;}
+				}
+			}
+			.card-group {
+				.card {width: 50%;}
+			}
+			h3.unq {width: 75%;}
+			h3 {font-size: 1.5rem; font-weight: $regular;}
+			form {display: block; width: 100%;
+				.form-group {margin: 0.5rem 0 1rem;
+					label {display: inline-block; margin: .375rem .275rem;}
+					.form-control {display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #888; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: $f-fam;}
+					.form-control:focus {color: #495057; background-color: #fff; border-color: $accent; outline: 0; box-shadow: 0 0 0 0.2rem $accent;}
+				}
+				.row {display: flex; flex-wrap: wrap; justify-content: space-between;
+					.form-group {width: 48%; padding: 0.5rem 0;
+						label {margin: .375rem 0;}
+						.form-control {width: 98%; margin: auto;}
+					}
+				}
+				button {margin: 0.5rem 0; border: none; background-color: #495057; color: #fff; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer;}
+				button:focus, button:hover {outline: none; background-color: $accent; color: #333;}
+			}
+			h5.margin-btm {margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1.2rem; font-weight: $regular;}
+		}
+		.well::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); box-shadow: inset 0 0 6px rgba(0,0,0,0.1); border-radius: 10px; background-color: #e9fac4;}
+		.well::-webkit-scrollbar {width: 5px; background-color: transparent;}
+		.well::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1); box-shadow: inset 0 0 6px rgba(0,0,0,.1); background-color: $accent;}
+	}
+}
+
+
+//************************ Media Queries
+
+@media only screen and (min-width: 1021px) and (max-width: 1260px) {
+	
+	.aether_product_pg #about_zeus {background-size: 50%; background-position-y: bottom;}
+
+	.aether_product_pg .section_1 .grid_quart.first, 
+	.aether_product_pg .section_1 .grid_quart.second,
+	.aether_product_pg .section_1 .grid_quart.third,
+	.aether_product_pg .section_1 .grid_quart.fourth {height: 50vh;}
+
+	.aether_product_pg .section_1 .grid_quart.first {border-right: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12;}
+	.aether_product_pg .section_1 .grid_quart.second {border-left: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12;}
+	.aether_product_pg .section_1 .grid_quart.third {border-right: 1px solid #a8eb12; border-top: 1px solid #a8eb12;}
+	.aether_product_pg .section_1 .grid_quart.fourth {border-left: 1px solid #a8eb12; border-top: 1px solid #a8eb12;}
+
+	.aether_product_pg .section_1 .grid_quart {width: 50%;}
+	.aether_product_pg .section_1 .grid_quart .well p {font-weight: 300; text-shadow: 1px 1px 0px #000;}
+	.aether_product_pg .section_2 {background-size: 50%; background-position-y: bottom;}
+	.aether_product_pg .section_2 .product_thumbnails .card {margin-left: 1rem;}
+	.aether_product_pg #about_zeus .well,
+	.aether_product_pg .section_2 .well {margin: 8rem 5rem;}
+	
+	.aether_stories_pg .section {background-position-x: right; background-position-y: bottom; background-size: 100vh;}	
+	.aether_about_pg .about_section .well .card:nth-child(2n+1) {clear: both;}
+	.aether_download_pg .downloads_section .well {height: 80vh;}
+	.aether_download_pg .downloads_section .well ul {width: 50%; margin: 8rem auto;}
+	.aether_download_pg .downloads_section .well ul li {width: 100%;}
+	.aether_patients_pg .patients_section .well,
+	.aether_about_pg .about_section .well,
+	.aether_clinicians_pg .clinicians_section .well,
+	.aether_faq_pg .faq_section .well,
+	.aether_contact_pg .contact_section .well {height: 80vh;}
+
+	.aether_faq_pg .faq_section .well .ques_ans .accordion {display: flex; justify-content: space-between;}
+	.aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay {width: 50%;}
+
+}
+
+@media only screen and (min-width: 551px) and (max-width: 1020px) {
+	.nav .nav_menu .nav_item {margin: 0 0.5rem 0.5rem;}
+	.section_title {font-size: 3rem;}
+
+	.aether_product_pg .section_1 .grid_quart.first, 
+	.aether_product_pg .section_1 .grid_quart.second,
+	.aether_product_pg .section_1 .grid_quart.third,
+	.aether_product_pg .section_1 .grid_quart.fourth {height: 50vh;}
+	.aether_product_pg .section_1 .grid_quart {width: 50%;}
+	.aether_product_pg .section_1 .grid_quart .well p {font-weight: 300; text-shadow: 1px 1px 0px #000;}
+
+	.aether_product_pg .section_1 .grid_quart.first {border-right: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12;}
+	.aether_product_pg .section_1 .grid_quart.second {border-left: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12;}
+	.aether_product_pg .section_1 .grid_quart.third {border-right: 1px solid #a8eb12; border-top: 1px solid #a8eb12;}
+	.aether_product_pg .section_1 .grid_quart.fourth {border-left: 1px solid #a8eb12; border-top: 1px solid #a8eb12;}
+	
+	.aether_product_pg .section_1 .section_overlay {top: 7rem;}
+
+	.aether_about_pg .about_section .well .card:nth-child(2n+1) {clear: both;}
+	.aether_patients_pg .patients_section .well,
+	.aether_about_pg .about_section .well,
+	.aether_clinicians_pg .clinicians_section .well,
+	.aether_faq_pg .faq_section .well,
+	.aether_contact_pg .contact_section .well {height: 75vh; width: 90%;}
+
+	.aether_product_pg .section_2 .product_thumbnails .card {margin-left: 1rem;}
+
+	.aether_support_pg .grid_half {width: 100%; padding: 1rem;}
+	.aether_support_pg .support_info {margin: 4rem 1rem 1rem; padding: 2rem 0rem 0; }
+	.aether_support_pg .support_form {margin: 1rem 1rem; padding: 0rem;}
+
+	.aether_download_pg .downloads_section .well ul {width: 100%;}
+	.aether_download_pg .downloads_section .well ul li {width: 45%;}
+	.aether_download_pg .downloads_section .well ul li a h5 {font-size: 1.2rem; width: 78%;}
+
+	.aether_faq_pg .faq_section .well .ques_ans .accordion {display: flex; justify-content: space-between;}
+}
+
+@media only screen and (max-width: 560px) {
+	.container-fluid {height: auto;}
+	.grid_half {width: 100%;}
+	.grid_quart {width: 100%;}
+	.section_title {font-size: 2.5rem;}
+	.nav_menu {display: none;}
+	.responsive_menu {display: block;}
+	.nav .hamburger-menu-list ul li:first-child a {background-color: rgba(0, 0, 0, 0.3); color: #fff;}
+
+	.next_page, .prev_page {display: none;}
+
+	.aether_hm_pg .grid_half:first-child,
+	.aether_hm_pg .grid_half:last-child {height: 50%;}
+
+	.aether_hm_pg .grid_half:first-child .hm_pg_lft_overlay,
+	.aether_hm_pg .grid_half:last-child .hm_pg_right_overlay {height: auto; position: relative; padding: 9rem 0; display: flex; justify-content: center; align-items: center;}
+	
+	.aether_product_pg #about_zeus,
+	.aether_product_pg .section_2 {height: auto; position: relative; padding: 0rem 0; display: flex; justify-content: center; align-items: center;}
+
+	.aether_product_pg #about_zeus {padding-bottom: 2rem;}
+	.aether_product_pg #about_zeus .well {width: 100%; margin: 5rem 0.5rem; padding: 1rem;}
+	.aether_product_pg #about_zeus .well .section_text.unq {width: 100%;}
+
+	.aether_product_pg .section {border-bottom: 2px solid $accent;}
+	.aether_product_pg .section_1 .grid_quart.first,
+	.aether_product_pg .section_1 .grid_quart.second,
+	.aether_product_pg .section_1 .grid_quart.third,
+	.aether_product_pg .section_1 .grid_quart.fourth {height: auto; overflow: auto;}
+
+	.aether_product_pg .section_1 .grid_quart .well {position: inherit; padding: 2rem 1rem;}
+	.aether_product_pg .section_1 {background: #051937; padding-bottom: 0rem;}
+	
+	.aether_product_pg .section_2 .well {width: 100%; margin: 0; padding: 4rem 1rem 10rem; text-align: center;}
+	.aether_product_pg .section_2 .well .section_text {width: 100%;}
+	.aether_product_pg .section_2 .product_thumbnails {padding: 1rem 0rem;}
+	.aether_product_pg .section_2 .product_thumbnails .card {width: 50%; margin-left: 0;}
+	.aether_product_pg .section_2 .product_thumbnails .card_main .card-img {width: 70%;}
+	.aether_product_pg .section_1 .section_overlay {display: none;}
+	.aether_product_pg .section_1 .grid_quart .well h3 {font-size: 2rem; line-height: 1; margin-bottom: 1rem;}
+
+	.aether_stories_pg .section {height: auto; border-bottom: 2px solid $accent;}
+	.aether_stories_pg .section .well {width: 100%; margin: 5rem 0rem; padding: 1rem;}
+	.aether_stories_pg .section:nth-child(odd) .well .section_text,
+	.aether_stories_pg .section .well .section_text.unq {width: 100%; margin-bottom: 2rem;}
+
+	.aether_patients_pg .grid_half:first-child,
+	.aether_clinicians_pg .grid_half:last-child,
+	.aether_career_pg .grid_half:first-child,
+	.aether_contact_pg .grid_half:last-child,
+	.aether_about_pg .grid_half:first-child {height: auto;}
+
+	.aether_patients_pg .grid_half:first-child .hm_pg_lft_overlay,
+	.aether_clinicians_pg .grid_half:last-child .hm_pg_lft_overlay,
+	.aether_career_pg .grid_half:first-child .hm_pg_lft_overlay,
+	.aether_contact_pg .grid_half:last-child .hm_pg_lft_overlay,
+	.aether_about_pg .grid_half:first-child .hm_pg_lft_overlay {position: inherit; height: auto; padding: 5rem 0;}
+
+	.aether_patients_pg .patients_section .well,
+	.aether_clinicians_pg .clinicians_section .well,
+	.aether_career_pg .career_section .well,
+	.aether_contact_pg .contact_section .well {width: 90%; margin: 4rem auto; height: auto;}
+
+	.aether_clinicians_pg .clinicians_section .well .card,
+	.aether_contact_pg .contact_section .well .panel,
+	.aether_clinicians_pg .clinicians_section .well h3.unq {width: 100%;}
+
+	.aether_contact_pg,
+	.aether_clinicians_pg,
+	.aether_blog_pg {display: flex; flex-flow: column-reverse;}
+
+	.aether_t_c_pg .terms_section,
+	.aether_pp_pg .policy_section,
+	.aether_download_pg .downloads_section,
+	.aether_faq_pg .faq_section {height: auto; overflow: auto; padding-bottom: 8rem;}
+
+	.aether_t_c_pg .terms_section .well,
+	.aether_pp_pg .policy_section .well,
+	.aether_download_pg .downloads_section .well,
+	.aether_faq_pg .faq_section .well,
+	.aether_about_pg .about_section .well {height: auto; width: 100%; padding: 1rem;}
+
+	.aether_t_c_pg .terms_section .well p,
+	.aether_pp_pg .policy_section .well p,
+	.aether_about_pg .about_section .well p {margin-right: 0;}
+
+	.aether_download_pg .downloads_section .well ul {width: 100%; padding: 1rem; margin: 2rem auto 0;}
+	.aether_download_pg .downloads_section .well ul li {width: 100%; clear: both; padding: 0; margin: 0.5rem 0;}
+	.aether_download_pg .downloads_section .well ul li a h5 {font-size: 1.2rem; width: 80%; margin: 0.5rem;}
+
+	.aether_support_pg .support_info {margin: 7rem 1rem 1rem; padding: 0;}
+	.aether_support_pg .support_form {margin: 0rem 1rem 7rem; padding: 2rem 0rem;}
+
+	.aether_faq_pg .faq_section .well .ques_ans {margin: 0; padding: 1rem 0; border-bottom: 1px solid #a8eb12;}
+	.aether_faq_pg .faq_section .well .ques_ans:last-child {border: none;}
+	.aether_faq_pg .faq_section .well .ques_ans .accordion {padding: 0; font-size: 1.2rem; display: flex; justify-content: space-between;}
+	.aether_faq_pg .faq_section .well .ques_ans .accordion span {margin-right: 0;}
+	.aether_faq_pg .faq_section .well .ques_ans .panel {padding: 0;}
+
+	.aether_blog_pg .grid_half:first-child {height: auto;}
+	.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay {position: relative; height: auto; padding: 3rem 0; width: 100%;}
+	.aether_blog_pg .grid_half:last-child {height: auto;}
+	.aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay .section_sub_title,
+	.aether_about_pg .grid_half:first-child .hm_pg_lft_overlay .section_sub_title {font-size: 1.5rem;}
+	.aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay {position: absolute; width: 100%; background-color: #051937;}
+	.aether_about_pg .about_section .well {margin: 2rem 0;}
+
+	.aether_about_pg .grid_half:first-child .hm_pg_lft_overlay .section_title {position: inherit; bottom: auto; left: auto; margin: 2rem;}
+}

@@ -1,0 +1,420 @@
+body { font-family: 'Montserrat', sans-serif; margin: 0; }
+
+div, nav { height: auto; overflow: auto; }
+
+p, h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a { text-decoration: none; }
+
+.active { color: #a8eb12 !important; }
+
+.container-fluid { width: 100%; height: 100vh; }
+
+.grid_half { width: 50%; }
+
+.grid_quart { width: 25%; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.clear { clear: both; }
+
+.margin-btm { margin-bottom: 1.5rem; }
+
+.section_title { margin: 2rem; font-size: 4rem; font-weight: 400; color: #fff; }
+
+.prev_page { position: absolute; top: 3rem; display: flex; justify-content: center; left: 0; right: 0; z-index: 1000; }
+.prev_page img { width: 2rem; }
+
+.next_page { position: absolute; bottom: 2rem; display: flex; justify-content: center; left: 0; right: 0; z-index: 1000; }
+.next_page img { width: 2rem; }
+
+* { box-sizing: border-box; }
+
+.download_link { display: flex; flex-wrap: nowrap; justify-content: end; align-items: center; margin: 0.5rem 2rem; }
+.download_link span { color: #000; font-size: 1rem; font-weight: 400; }
+.download_link img { width: 2rem; background-color: #474747; border-radius: 5rem; padding: 0.375rem; margin-left: 0.5rem; transform: rotate(270deg); }
+
+.responsive_menu { display: none; }
+
+.nav { position: fixed; top: 0; z-index: 999; width: 100%; left: 0; right: 0; display: inline-table; }
+.nav .nav_left, .nav .nav_right { height: auto; float: left; width: 50%; }
+.nav .nav_menu { list-style: none; padding: 0.5rem 1rem; }
+.nav .nav_menu .nav_item { display: inline-block; margin: 0 0.5rem; }
+.nav .nav_menu .nav_item .nav_link { color: #fff; text-transform: capitalize; }
+.nav .hamburger { background: none; position: absolute; top: 0; right: 1rem; z-index: 999; line-height: 3rem; padding: 0.5rem 1rem; color: #a8eb12; border: 0; font-size: 2rem; outline: none; cursor: pointer; }
+.nav .cross { background: none; position: absolute; top: 0px; right: 1rem; padding: 0.5rem 1rem; color: #a8eb12; border: 0; font-size: 2rem; line-height: 3rem; font-weight: bold; cursor: pointer; outline: none; z-index: 999; }
+.nav .hamburger-menu-list { z-index: 999; font-weight: 300; background: none; position: absolute; text-align: right; font-size: 0.8rem; right: 1rem; top: 3rem; }
+.nav .hamburger-menu-list ul { margin: 0; padding: 0; list-style-type: none; list-style-image: none; }
+.nav .hamburger-menu-list ul li { margin: 0.7rem; }
+.nav .hamburger-menu-list ul li a { background-color: rgba(0, 0, 0, 0.3); color: #fff; padding: 0.25rem; }
+.nav .hamburger-menu-list ul li:first-child a { background-color: #fff; color: #000; }
+.nav .hamburger-menu-list ul li:last-child span { background-color: rgba(0, 0, 0, 0.3); color: #a8eb12; border-bottom: 1px solid #a8eb12; padding: 0.25rem; }
+
+.aether_hm_pg .grid_half:first-child { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_hm_pg .grid_half:first-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end; }
+.aether_hm_pg .grid_half:last-child { background: #051937 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-image: url(../img/1robust.png); background-position-y: 0; position: relative; overflow: hidden; }
+.aether_hm_pg .grid_half:last-child .hm_pg_right_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(5, 25, 55, 0.35); height: 100vh; display: flex; align-items: flex-end; }
+.aether_hm_pg .section_title a { color: #fff; }
+
+.aether_product_pg { scroll-behavior: smooth; }
+.aether_product_pg #about_zeus { position: relative; background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 46%; background-position-y: -16rem; background-position-x: 0rem; background-image: url(../img/5our-product.png); overflow: hidden; }
+.aether_product_pg #about_zeus .section_title { position: absolute; bottom: 1rem; left: 1rem; }
+.aether_product_pg #about_zeus .well { width: 50%; margin: 5rem; text-align: right; }
+.aether_product_pg #about_zeus .well h2 { width: 15rem; text-align: right; margin-left: auto; color: #fff; font-size: 2rem; font-weight: 400; margin: 1rem 0 1rem auto; }
+.aether_product_pg #about_zeus .well .section_text { margin: 1rem 0; color: #fff; font-weight: 300; line-height: 1.6; }
+.aether_product_pg #about_zeus .well .section_text.unq { width: 65%; margin-left: auto; }
+.aether_product_pg .section_1 { position: relative; height: 100vh; }
+.aether_product_pg .section_1 .section_title { position: absolute; bottom: 1rem; left: 1rem; z-index: 999; }
+.aether_product_pg .section_1 .grid_quart.first { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 125%; background-position-y: 1.5rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_product_pg .section_1 .grid_quart.second { background: #051937 0% 0% no-repeat padding-box; height: 100vh; background-size: 200%; background-image: url(../img/1robust.png); background-position-y: 0; position: relative; overflow: hidden; }
+.aether_product_pg .section_1 .grid_quart.third { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 100%; background-position-y: -5rem; background-position-x: 0rem; background-image: url(../img/3designed.png); position: relative; overflow: hidden; }
+.aether_product_pg .section_1 .grid_quart.fourth { background: #051937 0% 0% no-repeat padding-box; height: 100vh; background-size: 100%; background-image: url(../img/2practical2.png); background-position-y: 0; position: relative; overflow: hidden; }
+.aether_product_pg .section_1 .grid_quart .well { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: end; position: absolute; padding: 1rem; line-height: 1.6; color: #fff; top: 0; bottom: 0; }
+.aether_product_pg .section_1 .grid_quart .well h3 { font-size: 2rem; font-weight: 400; }
+.aether_product_pg .section_1 .grid_quart .well p { font-weight: 300; }
+.aether_product_pg .section_1 .section_overlay { position: absolute; left: 0; right: 0; top: 10rem; display: flex; justify-content: center; font-size: 2rem; font-weight: 300; color: #fff; z-index: 999; }
+.aether_product_pg .section_2 { position: relative; background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 46%; background-position-y: -16rem; background-position-x: 0rem; background-image: url(../img/5our-product.png); overflow: hidden; }
+.aether_product_pg .section_2 .section_title { position: absolute; bottom: 1rem; left: 1rem; }
+.aether_product_pg .section_2 .section_text::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius: 10px; background-color: #03bbcc; }
+.aether_product_pg .section_2 .section_text::-webkit-scrollbar { width: 3px; background-color: transparent; }
+.aether_product_pg .section_2 .section_text::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #fff; }
+.aether_product_pg .section_2 .well { width: 50%; margin: 5rem; text-align: right; }
+.aether_product_pg .section_2 .well h3 { text-align: right; margin-left: auto; color: #fff; font-size: 2rem; font-weight: 400; margin: 1rem 0 1rem auto; }
+.aether_product_pg .section_2 .well .section_text { margin: 1rem 0; color: #fff; font-weight: 300; line-height: 1.6; width: 80%; margin-left: auto; height: 7rem; overflow: auto; padding: 0 1rem; }
+.aether_product_pg .section_2 .product_thumbnails { padding: 2rem 0 2rem 2rem; position: relative; }
+.aether_product_pg .section_2 .product_thumbnails .card { width: 45%; margin-left: 2rem; position: relative; }
+.aether_product_pg .section_2 .product_thumbnails .card .card-img { width: 100%; }
+.aether_product_pg .section_2 .product_thumbnails .card .img-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.726); }
+.aether_product_pg .section_2 .product_thumbnails .card_main { position: absolute; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; width: 95%; }
+.aether_product_pg .section_2 .product_thumbnails .card_main .card-img { width: 60%; background-color: #fff; }
+
+.aether_faq_pg .faq_section { position: relative; background: #102951; height: 100vh; overflow: hidden; }
+.aether_faq_pg .faq_section .section_title { position: absolute; bottom: 1rem; left: 1rem; color: #a8eb12; }
+.aether_faq_pg .faq_section .well { width: 90%; margin: 7rem auto 2rem; height: 60vh; overflow: auto; }
+.aether_faq_pg .faq_section .well h2 { width: 15rem; text-align: right; margin-left: auto; color: #fff; font-size: 2rem; font-weight: 400; margin: 1rem 0 1rem auto; }
+.aether_faq_pg .faq_section .well .section_text { margin: 1rem 0; color: #fff; font-weight: 300; line-height: 1.6; font-weight: 300; }
+.aether_faq_pg .faq_section .well .section_text.unq { width: 65%; margin-left: auto; }
+.aether_faq_pg .faq_section .well .ques_ans { padding: 0.5rem 1rem; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion { background-color: transparent; color: #fff; cursor: pointer; padding: 0.5rem 1rem; width: 100%; border: none; text-align: left; outline: none; font-size: 1.5rem; transition: 0.4s; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion span { float: left; margin-right: 2rem; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion img { width: 1rem; margin: 0.375rem 2rem; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion .close_accord { display: none; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion .open_accord { display: block; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion.active .close_accord { display: block; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion.active .open_accord { display: none; }
+.aether_faq_pg .faq_section .well .ques_ans .accordion:hover { color: #a8eb12; }
+.aether_faq_pg .faq_section .well .ques_ans .panel { padding: 0 1rem; background-color: transparent; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+.aether_faq_pg .faq_section .well .ques_ans .panel p { color: #ccc; font-weight: 300; line-height: 1.6; }
+.aether_faq_pg .faq_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius: 10px; background-color: #365a42; }
+.aether_faq_pg .faq_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_faq_pg .faq_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #a8eb12; }
+
+.aether_support_pg { position: relative; background: #008793; height: 100vh; overflow: hidden; }
+.aether_support_pg .section_title { position: absolute; bottom: 1rem; left: 1rem; color: #a8eb12; }
+.aether_support_pg .support_info { margin: 7rem 1rem; padding: 2rem; }
+.aether_support_pg .support_info p { color: #fff; font-weight: 300; }
+.aether_support_pg .support_form { margin: 6rem 1rem; padding: 2rem 5rem; }
+.aether_support_pg .support_form form { display: block; }
+.aether_support_pg .support_form form .form-group { margin: 0.5rem 0; }
+.aether_support_pg .support_form form .form-group label { display: inline-block; margin: .375rem .275rem; color: #fff; }
+.aether_support_pg .support_form form .form-group .form-control { display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: "Montserrat", sans-serif; }
+.aether_support_pg .support_form form .form-group .form-control:focus { color: #495057; background-color: #fff; border-color: #a8eb12; outline: 0; box-shadow: 0 0 0 0.2rem #a8eb12; }
+.aether_support_pg .support_form form .form-group textarea { overflow: auto; resize: vertical; }
+.aether_support_pg .support_form form .row { display: flex; flex-wrap: wrap; justify-content: space-between; }
+.aether_support_pg .support_form form .row .form-group { width: 48%; }
+.aether_support_pg .support_form form .row .form-group label { margin: .375rem 0; }
+.aether_support_pg .support_form form .row .form-group .form-control { width: 98%; margin: auto; }
+.aether_support_pg .support_form form button { margin: 0.5rem 0.5rem; border: none; background-color: #a8eb12; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer; }
+.aether_support_pg .support_form form button:focus, .aether_support_pg .support_form form button:hover { outline: none; background-color: #9ad811; }
+
+.aether_pp_pg .policy_section { position: relative; background: #102951; height: 100vh; overflow: hidden; }
+.aether_pp_pg .policy_section .section_title { position: absolute; bottom: 1rem; left: 1rem; color: #a8eb12; }
+.aether_pp_pg .policy_section .well { width: 90%; margin: 7rem auto 2rem; height: 60vh; overflow: auto; }
+.aether_pp_pg .policy_section .well p { color: #fff; font-weight: 300; line-height: 1.6; margin-right: 3rem; }
+.aether_pp_pg .policy_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius: 10px; background-color: #365a42; }
+.aether_pp_pg .policy_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_pp_pg .policy_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #a8eb12; }
+
+.aether_t_c_pg .terms_section { position: relative; background: #008793; height: 100vh; overflow: hidden; }
+.aether_t_c_pg .terms_section .section_title { position: absolute; bottom: 1rem; left: 1rem; color: #a8eb12; }
+.aether_t_c_pg .terms_section .well { width: 90%; margin: 8rem auto 2rem; height: 60vh; overflow: auto; }
+.aether_t_c_pg .terms_section .well p { color: #fff; font-weight: 300; line-height: 1.6; margin-right: 3rem; }
+.aether_t_c_pg .terms_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius: 10px; background-color: #365a42; }
+.aether_t_c_pg .terms_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_t_c_pg .terms_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #a8eb12; }
+
+.aether_download_pg .downloads_section { position: relative; background: #008793; height: 100vh; overflow: hidden; }
+.aether_download_pg .downloads_section .section_title { position: absolute; bottom: 1rem; left: 1rem; color: #a8eb12; }
+.aether_download_pg .downloads_section .well { width: 90%; margin: 8rem auto 2rem; height: 60vh; overflow: auto; }
+.aether_download_pg .downloads_section .well p { color: #fff; font-weight: 300; line-height: 1.6; margin-right: 3rem; }
+.aether_download_pg .downloads_section .well ul { list-style: none; padding: 0; width: 80%; margin: 2rem auto; height: auto; overflow: auto; }
+.aether_download_pg .downloads_section .well ul li { margin: 0.5rem 1rem; padding: 0.5rem 1rem; width: 40%; float: left; }
+.aether_download_pg .downloads_section .well ul li a h5 { color: #fff; font-size: 1.5rem; font-weight: 500; width: 70%; margin: 0.5rem; }
+.aether_download_pg .downloads_section .well ul li a img { width: 2rem; background-color: #a8eb12; border-radius: 1rem; padding: 5px; margin: 0.375rem; }
+.aether_download_pg .downloads_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); border-radius: 10px; background-color: #365a42; }
+.aether_download_pg .downloads_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_download_pg .downloads_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #a8eb12; }
+
+.aether_about_pg .grid_half:first-child { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_about_pg .grid_half:first-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: center; }
+.aether_about_pg .grid_half:first-child .hm_pg_lft_overlay .section_title { color: #a8eb12; position: absolute; bottom: 2rem; left: 2rem; margin: 0; }
+.aether_about_pg .grid_half:first-child .hm_pg_lft_overlay .section_title a { color: #a8eb12; }
+.aether_about_pg .grid_half:first-child .hm_pg_lft_overlay .section_sub_title { margin: 1rem 2rem; font-size: 2.5rem; font-weight: 300; color: #a8eb12; }
+.aether_about_pg .about_section .well { width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto; }
+.aether_about_pg .about_section .well h2 { font-size: 2rem; font-weight: 400; margin-top: 0; }
+.aether_about_pg .about_section .well h3 { font-size: 2rem; font-weight: 400; margin-top: 3rem; }
+.aether_about_pg .about_section .well h5 { font-weight: 600; font-size: 1rem; margin-top: 1rem; margin-bottom: 0.5rem; }
+.aether_about_pg .about_section .well p { font-weight: 300; line-height: 1.6; margin-right: 3rem; }
+.aether_about_pg .about_section .well p span { font-weight: 500; }
+.aether_about_pg .about_section .well .card { width: 40%; margin: 1rem 0.5rem; float: left; text-align: center; }
+.aether_about_pg .about_section .well .card .card-img { border-radius: 5rem; width: 70%; padding: 1rem 0; }
+.aether_about_pg .about_section .well .card .card-title { font-size: 1rem; font-weight: 600; margin-top: 0.5rem; }
+.aether_about_pg .about_section .well .card .card-text { margin: 0.5rem 0; font-weight: 300; font-size: 0.8rem; }
+.aether_about_pg .about_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; background-color: #e9fac4; }
+.aether_about_pg .about_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_about_pg .about_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); background-color: #a8eb12; }
+
+.aether_blog_pg .grid_half:first-child { background-color: #102951; height: 100vh; }
+.aether_blog_pg .grid_half:last-child { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 1rem; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay .section_sub_title { color: #a8eb12; font-size: 5rem; display: flex; flex-wrap: nowrap; align-items: center; font-weight: 300; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay .section_sub_title span { color: #fff; font-size: 2rem; margin-left: 0.5rem; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay ul { list-style: none; padding: 0; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay ul li { margin: 1rem 0.5rem; text-align: right; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay ul li:first-child a, .aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay ul li:last-child a { font-size: 0.5rem; color: #fff; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay ul li:nth-child(even) a { font-size: 0.7rem; color: #fff; }
+.aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay ul li.active a { font-size: 1rem; color: #fff; }
+.aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; width: 50%; display: flex; align-items: center; }
+.aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay .section_title { color: #a8eb12; position: absolute; bottom: 2rem; left: 2rem; margin: 0; }
+.aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay .section_sub_title { margin: 1rem 2rem; font-size: 2.5rem; font-weight: 300; color: #a8eb12; }
+.aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay .section_sub_title a { color: #fff; }
+
+.aether_stories_pg { scroll-behavior: smooth; }
+.aether_stories_pg .section:nth-child(odd) { background-image: url(../img/1robust@2x.png); background-position: right; }
+.aether_stories_pg .section:nth-child(odd) .well { text-align: left; }
+.aether_stories_pg .section:nth-child(odd) .well h2 { width: 15rem; text-align: left; margin-right: auto; }
+.aether_stories_pg .section:nth-child(odd) .well .section_text { width: 65%; margin-right: auto; }
+.aether_stories_pg .section:nth-child(even) .well { text-align: right; }
+.aether_stories_pg .section:nth-child(even) .well h2 { width: 15rem; text-align: right; margin-left: auto; }
+.aether_stories_pg .section:nth-child(even) .well .section_text { width: 65%; margin-left: auto; }
+.aether_stories_pg .section:nth-child(even) .well .card { margin-left: auto; }
+.aether_stories_pg .section { position: relative; background: #102951 0% 0% no-repeat padding-box; height: 100vh; background-size: 46%; background-image: url(../img/1robust.png); background-position-y: 0; background-position-x: 0rem; overflow: hidden; }
+.aether_stories_pg .section .section_title { position: absolute; bottom: 1rem; left: 1rem; }
+.aether_stories_pg .section .well { width: 50%; margin: 5rem 4rem; }
+.aether_stories_pg .section .well h2 { color: #fff; font-size: 2rem; font-weight: 400; }
+.aether_stories_pg .section .well .section_text { margin: 1rem 0; color: #fff; font-weight: 300; line-height: 1.6; font-weight: 300; }
+.aether_stories_pg .section .well .section_text.unq { font-style: italic; font-weight: 300; width: 90%; margin-top: 1rem; }
+.aether_stories_pg .section .well .card { width: 60%; }
+.aether_stories_pg .section .well .card .card-img { width: 100%; }
+
+.aether_career_pg .grid_half:first-child { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_career_pg .grid_half:first-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end; }
+.aether_career_pg .grid_half:first-child .hm_pg_lft_overlay .section_title { color: #a8eb12; }
+.aether_career_pg .career_section .well { width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto; }
+.aether_career_pg .career_section .well h2 { font-size: 2rem; font-weight: 400; margin-top: 0; }
+.aether_career_pg .career_section .well p { font-weight: 300; line-height: 1.6; margin-right: 3rem; }
+.aether_career_pg .career_section .well .card { width: 90%; }
+.aether_career_pg .career_section .well .card .card-img { width: 100%; }
+
+.aether_clinicians_pg .grid_half:last-child { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_clinicians_pg .grid_half:last-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end; }
+.aether_clinicians_pg .grid_half:last-child .hm_pg_lft_overlay .section_title { color: #a8eb12; }
+.aether_clinicians_pg .clinicians_section .well { width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto; }
+.aether_clinicians_pg .clinicians_section .well h2 { font-size: 2rem; font-weight: 400; margin-top: 0; }
+.aether_clinicians_pg .clinicians_section .well p { font-weight: 300; line-height: 1.6; margin-right: 3rem; }
+.aether_clinicians_pg .clinicians_section .well .card { width: 90%; }
+.aether_clinicians_pg .clinicians_section .well .card .card-img { width: 100%; }
+.aether_clinicians_pg .clinicians_section .well .card { padding: 1rem 0; margin-bottom: 1rem; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion { font-family: "Montserrat", sans-serif; background-color: transparent; cursor: pointer; padding: 0.5rem 0; width: 100%; border: none; text-align: left; outline: none; font-size: 1rem; transition: 0.4s; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion span { float: left; margin-right: 0.5rem; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion img { width: 1rem; margin: 0.175rem 2rem; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion .close_accord { display: none; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion .open_accord { display: block; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion.active .close_accord { display: block; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion.active .open_accord { display: none; }
+.aether_clinicians_pg .clinicians_section .well .card .accordion:hover { color: #a8eb12; }
+.aether_clinicians_pg .clinicians_section .well .card .panel { padding: 0; background-color: transparent; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+.aether_clinicians_pg .clinicians_section .well .card .panel p { font-weight: 300; line-height: 1.6; }
+.aether_clinicians_pg .clinicians_section .well .card .card-img { margin-bottom: 2rem; }
+.aether_clinicians_pg .clinicians_section .well h3.unq { width: 75%; }
+.aether_clinicians_pg .clinicians_section .well h3 { font-size: 2rem; font-weight: 400; }
+.aether_clinicians_pg .clinicians_section .well form { display: block; width: 100%; }
+.aether_clinicians_pg .clinicians_section .well form .form-group { margin: 0.5rem 0 1rem; }
+.aether_clinicians_pg .clinicians_section .well form .form-group label { display: inline-block; margin: .375rem .275rem; }
+.aether_clinicians_pg .clinicians_section .well form .form-group .form-control { display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #888; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: "Montserrat", sans-serif; }
+.aether_clinicians_pg .clinicians_section .well form .form-group .form-control:focus { color: #495057; background-color: #fff; border-color: #a8eb12; outline: 0; box-shadow: 0 0 0 0.2rem #a8eb12; }
+.aether_clinicians_pg .clinicians_section .well form button { margin: 0.5rem 0; border: none; background-color: #495057; color: #fff; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer; }
+.aether_clinicians_pg .clinicians_section .well form button:focus, .aether_clinicians_pg .clinicians_section .well form button:hover { outline: none; background-color: #a8eb12; color: #333; }
+.aether_clinicians_pg .clinicians_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; background-color: #e9fac4; }
+.aether_clinicians_pg .clinicians_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_clinicians_pg .clinicians_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); background-color: #a8eb12; }
+
+.aether_patients_pg .grid_half:first-child { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_patients_pg .grid_half:first-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end; }
+.aether_patients_pg .grid_half:first-child .hm_pg_lft_overlay .section_title { color: #a8eb12; }
+.aether_patients_pg .patients_section .well { width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto; }
+.aether_patients_pg .patients_section .well h2 { font-size: 2rem; font-weight: 400; margin-top: 0; }
+.aether_patients_pg .patients_section .well p { font-weight: 300; line-height: 1.6; margin-right: 3rem; }
+.aether_patients_pg .patients_section .well .card { width: 90%; }
+.aether_patients_pg .patients_section .well .card .card-img { width: 100%; }
+.aether_patients_pg .patients_section .well .card { padding: 1rem 0; margin-bottom: 1rem; }
+.aether_patients_pg .patients_section .well .card .accordion { font-family: "Montserrat", sans-serif; background-color: transparent; cursor: pointer; padding: 0.5rem 0; width: 100%; border: none; text-align: left; outline: none; font-size: 1rem; transition: 0.4s; }
+.aether_patients_pg .patients_section .well .card .accordion span { float: left; margin-right: 0.5rem; }
+.aether_patients_pg .patients_section .well .card .accordion img { width: 1rem; margin: 0.175rem 2rem; }
+.aether_patients_pg .patients_section .well .card .accordion .close_accord { display: none; }
+.aether_patients_pg .patients_section .well .card .accordion .open_accord { display: block; }
+.aether_patients_pg .patients_section .well .card .accordion.active .close_accord { display: block; }
+.aether_patients_pg .patients_section .well .card .accordion.active .open_accord { display: none; }
+.aether_patients_pg .patients_section .well .card .accordion:hover { color: #a8eb12; }
+.aether_patients_pg .patients_section .well .card .panel { padding: 0; background-color: transparent; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+.aether_patients_pg .patients_section .well .card .panel p { font-weight: 300; line-height: 1.6; }
+.aether_patients_pg .patients_section .well .card .card-img { margin-bottom: 2rem; }
+.aether_patients_pg .patients_section .well h3.unq { width: 75%; }
+.aether_patients_pg .patients_section .well h3 { font-size: 2rem; font-weight: 400; }
+.aether_patients_pg .patients_section .well form { display: block; width: 100%; }
+.aether_patients_pg .patients_section .well form .form-group { margin: 0.5rem 0 1rem; }
+.aether_patients_pg .patients_section .well form .form-group label { display: inline-block; margin: .375rem .275rem; font-weight: 300; }
+.aether_patients_pg .patients_section .well form .form-group .form-control { display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #888; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: "Montserrat", sans-serif; }
+.aether_patients_pg .patients_section .well form .form-group .form-control:focus { color: #495057; background-color: #fff; border-color: #a8eb12; outline: 0; box-shadow: 0 0 0 0.2rem #a8eb12; }
+.aether_patients_pg .patients_section .well form .radio_grp { margin: 1rem 0; }
+.aether_patients_pg .patients_section .well form .radio_grp h5 { font-size: 1rem; font-weight: 400; padding: 0.375rem; }
+.aether_patients_pg .patients_section .well form .radio_grp .form-check { margin: 0.5rem 0; }
+.aether_patients_pg .patients_section .well form .radio_grp .form-check label { font-weight: 300; }
+.aether_patients_pg .patients_section .well form .radio_grp .form-check .form-control { border-top: 0; border-left: 0; border-right: 0; border-bottom: 1px solid #888; outline: none; margin-left: 1rem; padding: 0.375rem; font-family: "Montserrat", sans-serif; }
+.aether_patients_pg .patients_section .well form .radio_input_grp .form-check { padding: 0.375rem; }
+.aether_patients_pg .patients_section .well form .radio_input_grp .form-check label { float: left; }
+.aether_patients_pg .patients_section .well form .radio_input_grp .form-check label p { width: 3rem; }
+.aether_patients_pg .patients_section .well form .radio_input_grp .form-check .form-control { float: left; border: 1px solid #888; padding: 0.375rem; font-family: "Montserrat", sans-serif; }
+.aether_patients_pg .patients_section .well form button { margin: 0.5rem 0; border: none; background-color: #495057; color: #fff; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer; }
+.aether_patients_pg .patients_section .well form button:focus, .aether_patients_pg .patients_section .well form button:hover { outline: none; background-color: #a8eb12; color: #333; }
+.aether_patients_pg .patients_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; background-color: #e9fac4; }
+.aether_patients_pg .patients_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_patients_pg .patients_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); background-color: #a8eb12; }
+
+.aether_contact_pg .grid_half:last-child { background: #008793 0% 0% no-repeat padding-box; height: 100vh; background-size: 90%; background-position-y: -14rem; background-image: url(../img/5our-product.png); position: relative; overflow: hidden; }
+.aether_contact_pg .grid_half:last-child .hm_pg_lft_overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 135, 147, 0.25); height: 100vh; display: flex; align-items: flex-end; }
+.aether_contact_pg .grid_half:last-child .hm_pg_lft_overlay .section_title { color: #a8eb12; }
+.aether_contact_pg .contact_section .well { width: 75%; margin: 7rem auto 4rem; height: 70vh; overflow: auto; }
+.aether_contact_pg .contact_section .well h2 { font-size: 2rem; font-weight: 400; margin-top: 0; }
+.aether_contact_pg .contact_section .well p { font-weight: 300; line-height: 1.6; }
+.aether_contact_pg .contact_section .well .panel { width: 90%; padding: 0; background-color: transparent; overflow: hidden; transition: max-height 0.2s ease-out; }
+.aether_contact_pg .contact_section .well .panel p { font-weight: 300; line-height: 1.6; }
+.aether_contact_pg .contact_section .well .card { padding: 0.5rem 0; width: 90%; margin-bottom: 1rem; }
+.aether_contact_pg .contact_section .well .card .card-img { margin-bottom: 2rem; }
+.aether_contact_pg .contact_section .well .card .card-title { font-weight: 400; font-size: 1rem; margin-bottom: 0.5rem; }
+.aether_contact_pg .contact_section .well .card .card-text p { width: 8rem; }
+.aether_contact_pg .contact_section .well .card-group .card { width: 50%; }
+.aether_contact_pg .contact_section .well h3.unq { width: 75%; }
+.aether_contact_pg .contact_section .well h3 { font-size: 1.5rem; font-weight: 400; }
+.aether_contact_pg .contact_section .well form { display: block; width: 100%; }
+.aether_contact_pg .contact_section .well form .form-group { margin: 0.5rem 0 1rem; }
+.aether_contact_pg .contact_section .well form .form-group label { display: inline-block; margin: .375rem .275rem; }
+.aether_contact_pg .contact_section .well form .form-group .form-control { display: block; width: 98%; margin: 5px; height: auto; padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #888; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; font-family: "Montserrat", sans-serif; }
+.aether_contact_pg .contact_section .well form .form-group .form-control:focus { color: #495057; background-color: #fff; border-color: #a8eb12; outline: 0; box-shadow: 0 0 0 0.2rem #a8eb12; }
+.aether_contact_pg .contact_section .well form .row { display: flex; flex-wrap: wrap; justify-content: space-between; }
+.aether_contact_pg .contact_section .well form .row .form-group { width: 48%; padding: 0.5rem 0; }
+.aether_contact_pg .contact_section .well form .row .form-group label { margin: .375rem 0; }
+.aether_contact_pg .contact_section .well form .row .form-group .form-control { width: 98%; margin: auto; }
+.aether_contact_pg .contact_section .well form button { margin: 0.5rem 0; border: none; background-color: #495057; color: #fff; font-size: 1rem; padding: 0.5rem 3rem; cursor: pointer; }
+.aether_contact_pg .contact_section .well form button:focus, .aether_contact_pg .contact_section .well form button:hover { outline: none; background-color: #a8eb12; color: #333; }
+.aether_contact_pg .contact_section .well h5.margin-btm { margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1.2rem; font-weight: 400; }
+.aether_contact_pg .contact_section .well::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; background-color: #e9fac4; }
+.aether_contact_pg .contact_section .well::-webkit-scrollbar { width: 5px; background-color: transparent; }
+.aether_contact_pg .contact_section .well::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); background-color: #a8eb12; }
+
+@media only screen and (min-width: 1021px) and (max-width: 1260px) { .aether_product_pg #about_zeus { background-size: 50%; background-position-y: bottom; }
+  .aether_product_pg .section_1 .grid_quart.first, .aether_product_pg .section_1 .grid_quart.second, .aether_product_pg .section_1 .grid_quart.third, .aether_product_pg .section_1 .grid_quart.fourth { height: 50vh; }
+  .aether_product_pg .section_1 .grid_quart.first { border-right: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart.second { border-left: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart.third { border-right: 1px solid #a8eb12; border-top: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart.fourth { border-left: 1px solid #a8eb12; border-top: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart { width: 50%; }
+  .aether_product_pg .section_1 .grid_quart .well p { font-weight: 300; text-shadow: 1px 1px 0px #000; }
+  .aether_product_pg .section_2 { background-size: 50%; background-position-y: bottom; }
+  .aether_product_pg .section_2 .product_thumbnails .card { margin-left: 1rem; }
+  .aether_product_pg #about_zeus .well, .aether_product_pg .section_2 .well { margin: 8rem 5rem; }
+  .aether_stories_pg .section { background-position-x: right; background-position-y: bottom; background-size: 100vh; }
+  .aether_about_pg .about_section .well .card:nth-child(2n+1) { clear: both; }
+  .aether_download_pg .downloads_section .well { height: 80vh; }
+  .aether_download_pg .downloads_section .well ul { width: 50%; margin: 8rem auto; }
+  .aether_download_pg .downloads_section .well ul li { width: 100%; }
+  .aether_patients_pg .patients_section .well, .aether_about_pg .about_section .well, .aether_clinicians_pg .clinicians_section .well, .aether_faq_pg .faq_section .well, .aether_contact_pg .contact_section .well { height: 80vh; }
+  .aether_faq_pg .faq_section .well .ques_ans .accordion { display: flex; justify-content: space-between; }
+  .aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay { width: 50%; } }
+@media only screen and (min-width: 551px) and (max-width: 1020px) { .nav .nav_menu .nav_item { margin: 0 0.5rem 0.5rem; }
+  .section_title { font-size: 3rem; }
+  .aether_product_pg .section_1 .grid_quart.first, .aether_product_pg .section_1 .grid_quart.second, .aether_product_pg .section_1 .grid_quart.third, .aether_product_pg .section_1 .grid_quart.fourth { height: 50vh; }
+  .aether_product_pg .section_1 .grid_quart { width: 50%; }
+  .aether_product_pg .section_1 .grid_quart .well p { font-weight: 300; text-shadow: 1px 1px 0px #000; }
+  .aether_product_pg .section_1 .grid_quart.first { border-right: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart.second { border-left: 1px solid #a8eb12; border-bottom: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart.third { border-right: 1px solid #a8eb12; border-top: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart.fourth { border-left: 1px solid #a8eb12; border-top: 1px solid #a8eb12; }
+  .aether_product_pg .section_1 .section_overlay { top: 7rem; }
+  .aether_about_pg .about_section .well .card:nth-child(2n+1) { clear: both; }
+  .aether_patients_pg .patients_section .well, .aether_about_pg .about_section .well, .aether_clinicians_pg .clinicians_section .well, .aether_faq_pg .faq_section .well, .aether_contact_pg .contact_section .well { height: 75vh; width: 90%; }
+  .aether_product_pg .section_2 .product_thumbnails .card { margin-left: 1rem; }
+  .aether_support_pg .grid_half { width: 100%; padding: 1rem; }
+  .aether_support_pg .support_info { margin: 4rem 1rem 1rem; padding: 2rem 0rem 0; }
+  .aether_support_pg .support_form { margin: 1rem 1rem; padding: 0rem; }
+  .aether_download_pg .downloads_section .well ul { width: 100%; }
+  .aether_download_pg .downloads_section .well ul li { width: 45%; }
+  .aether_download_pg .downloads_section .well ul li a h5 { font-size: 1.2rem; width: 78%; }
+  .aether_faq_pg .faq_section .well .ques_ans .accordion { display: flex; justify-content: space-between; } }
+@media only screen and (max-width: 560px) { .container-fluid { height: auto; }
+  .grid_half { width: 100%; }
+  .grid_quart { width: 100%; }
+  .section_title { font-size: 2.5rem; }
+  .nav_menu { display: none; }
+  .responsive_menu { display: block; }
+  .nav .hamburger-menu-list ul li:first-child a { background-color: rgba(0, 0, 0, 0.3); color: #fff; }
+  .next_page, .prev_page { display: none; }
+  .aether_hm_pg .grid_half:first-child, .aether_hm_pg .grid_half:last-child { height: 50%; }
+  .aether_hm_pg .grid_half:first-child .hm_pg_lft_overlay, .aether_hm_pg .grid_half:last-child .hm_pg_right_overlay { height: auto; position: relative; padding: 9rem 0; display: flex; justify-content: center; align-items: center; }
+  .aether_product_pg #about_zeus, .aether_product_pg .section_2 { height: auto; position: relative; padding: 0rem 0; display: flex; justify-content: center; align-items: center; }
+  .aether_product_pg #about_zeus { padding-bottom: 2rem; }
+  .aether_product_pg #about_zeus .well { width: 100%; margin: 5rem 0.5rem; padding: 1rem; }
+  .aether_product_pg #about_zeus .well .section_text.unq { width: 100%; }
+  .aether_product_pg .section { border-bottom: 2px solid #a8eb12; }
+  .aether_product_pg .section_1 .grid_quart.first, .aether_product_pg .section_1 .grid_quart.second, .aether_product_pg .section_1 .grid_quart.third, .aether_product_pg .section_1 .grid_quart.fourth { height: auto; overflow: auto; }
+  .aether_product_pg .section_1 .grid_quart .well { position: inherit; padding: 2rem 1rem; }
+  .aether_product_pg .section_1 { background: #051937; padding-bottom: 0rem; }
+  .aether_product_pg .section_2 .well { width: 100%; margin: 0; padding: 4rem 1rem 10rem; text-align: center; }
+  .aether_product_pg .section_2 .well .section_text { width: 100%; }
+  .aether_product_pg .section_2 .product_thumbnails { padding: 1rem 0rem; }
+  .aether_product_pg .section_2 .product_thumbnails .card { width: 50%; margin-left: 0; }
+  .aether_product_pg .section_2 .product_thumbnails .card_main .card-img { width: 70%; }
+  .aether_product_pg .section_1 .section_overlay { display: none; }
+  .aether_product_pg .section_1 .grid_quart .well h3 { font-size: 2rem; line-height: 1; margin-bottom: 1rem; }
+  .aether_stories_pg .section { height: auto; border-bottom: 2px solid #a8eb12; }
+  .aether_stories_pg .section .well { width: 100%; margin: 5rem 0rem; padding: 1rem; }
+  .aether_stories_pg .section:nth-child(odd) .well .section_text, .aether_stories_pg .section .well .section_text.unq { width: 100%; margin-bottom: 2rem; }
+  .aether_patients_pg .grid_half:first-child, .aether_clinicians_pg .grid_half:last-child, .aether_career_pg .grid_half:first-child, .aether_contact_pg .grid_half:last-child, .aether_about_pg .grid_half:first-child { height: auto; }
+  .aether_patients_pg .grid_half:first-child .hm_pg_lft_overlay, .aether_clinicians_pg .grid_half:last-child .hm_pg_lft_overlay, .aether_career_pg .grid_half:first-child .hm_pg_lft_overlay, .aether_contact_pg .grid_half:last-child .hm_pg_lft_overlay, .aether_about_pg .grid_half:first-child .hm_pg_lft_overlay { position: inherit; height: auto; padding: 5rem 0; }
+  .aether_patients_pg .patients_section .well, .aether_clinicians_pg .clinicians_section .well, .aether_career_pg .career_section .well, .aether_contact_pg .contact_section .well { width: 90%; margin: 4rem auto; height: auto; }
+  .aether_clinicians_pg .clinicians_section .well .card, .aether_contact_pg .contact_section .well .panel, .aether_clinicians_pg .clinicians_section .well h3.unq { width: 100%; }
+  .aether_contact_pg, .aether_clinicians_pg, .aether_blog_pg { display: flex; flex-flow: column-reverse; }
+  .aether_t_c_pg .terms_section, .aether_pp_pg .policy_section, .aether_download_pg .downloads_section, .aether_faq_pg .faq_section { height: auto; overflow: auto; padding-bottom: 8rem; }
+  .aether_t_c_pg .terms_section .well, .aether_pp_pg .policy_section .well, .aether_download_pg .downloads_section .well, .aether_faq_pg .faq_section .well, .aether_about_pg .about_section .well { height: auto; width: 100%; padding: 1rem; }
+  .aether_t_c_pg .terms_section .well p, .aether_pp_pg .policy_section .well p, .aether_about_pg .about_section .well p { margin-right: 0; }
+  .aether_download_pg .downloads_section .well ul { width: 100%; padding: 1rem; margin: 2rem auto 0; }
+  .aether_download_pg .downloads_section .well ul li { width: 100%; clear: both; padding: 0; margin: 0.5rem 0; }
+  .aether_download_pg .downloads_section .well ul li a h5 { font-size: 1.2rem; width: 80%; margin: 0.5rem; }
+  .aether_support_pg .support_info { margin: 7rem 1rem 1rem; padding: 0; }
+  .aether_support_pg .support_form { margin: 0rem 1rem 7rem; padding: 2rem 0rem; }
+  .aether_faq_pg .faq_section .well .ques_ans { margin: 0; padding: 1rem 0; border-bottom: 1px solid #a8eb12; }
+  .aether_faq_pg .faq_section .well .ques_ans:last-child { border: none; }
+  .aether_faq_pg .faq_section .well .ques_ans .accordion { padding: 0; font-size: 1.2rem; display: flex; justify-content: space-between; }
+  .aether_faq_pg .faq_section .well .ques_ans .accordion span { margin-right: 0; }
+  .aether_faq_pg .faq_section .well .ques_ans .panel { padding: 0; }
+  .aether_blog_pg .grid_half:first-child { height: auto; }
+  .aether_blog_pg .grid_half:last-child .hm_pg_lft_overlay { position: relative; height: auto; padding: 3rem 0; width: 100%; }
+  .aether_blog_pg .grid_half:last-child { height: auto; }
+  .aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay .section_sub_title, .aether_about_pg .grid_half:first-child .hm_pg_lft_overlay .section_sub_title { font-size: 1.5rem; }
+  .aether_blog_pg .grid_half:first-child .hm_pg_lft_overlay { position: absolute; width: 100%; background-color: #051937; }
+  .aether_about_pg .about_section .well { margin: 2rem 0; }
+  .aether_about_pg .grid_half:first-child .hm_pg_lft_overlay .section_title { position: inherit; bottom: auto; left: auto; margin: 2rem; } }
+
+/*# sourceMappingURL=style.css.map */
