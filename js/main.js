@@ -3,18 +3,18 @@
 
 $(document).ready(function() {
 
-	$( ".cross" ).hide();
+	$( ".close-hamburger" ).hide();
 	$( ".hamburger-menu-list" ).hide();
 		$( ".hamburger" ).click(function() {
 		$( ".hamburger-menu-list" ).slideToggle( "slow", function() {
 		$( ".hamburger" ).hide();
-		$( ".cross" ).show();
+		$( ".close-hamburger" ).show();
 	});
 });
 
-	$( ".cross" ).click(function() {
+	$( ".close-hamburger" ).click(function() {
 	$( ".hamburger-menu-list" ).slideToggle( "slow", function() {
-	$( ".cross" ).hide();
+	$( ".close-hamburger" ).hide();
 	$( ".hamburger" ).show();
 });
 });

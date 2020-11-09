@@ -123,7 +123,7 @@ a {
     font-size: 2rem;
     outline: none;
     cursor: pointer; }
-  .nav .cross {
+  .nav .close-hamburger {
     background: none;
     position: absolute;
     top: 0px;

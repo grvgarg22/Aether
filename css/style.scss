@@ -44,7 +44,7 @@ a {text-decoration: none;}
 		}
 	}
 	.hamburger {background: none; position: absolute; top: 0; right: 1rem; z-index: 999; line-height: 3rem; padding: 0.5rem 1rem; color: #a8eb12; border: 0; font-size: 2rem; outline: none; cursor: pointer;}
-	.cross {background: none; position: absolute; top: 0px; right: 1rem; padding: 0.5rem 1rem; color: $accent; border: 0; font-size: 2rem; line-height: 3rem; font-weight: bold; cursor: pointer; outline: none; z-index: 999;}
+	.close-hamburger {background: none; position: absolute; top: 0px; right: 1rem; padding: 0.5rem 1rem; color: $accent; border: 0; font-size: 2rem; line-height: 3rem; font-weight: bold; cursor: pointer; outline: none; z-index: 999;}
 	.hamburger-menu-list {z-index: 999; font-weight: $light; background: none; position:absolute; text-align: right; font-size: 0.8rem; right: 1rem; top: 3rem;
 		ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;
 			li {margin: 0.7rem;
