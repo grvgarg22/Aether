@@ -1548,16 +1548,19 @@ a {
 
   .aether_hm_pg .grid_half:first-child,
   .aether_hm_pg .grid_half:last-child {
-    height: 50vh; }
+    height: 45vh; }
 
   .aether_hm_pg .grid_half:first-child .hm_pg_lft_overlay,
   .aether_hm_pg .grid_half:last-child .hm_pg_right_overlay {
-    height: 50vh;
+    height: 45vh;
     position: relative;
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center; }
+
+  .aether_product_pg .section_title {
+    color: #a8eb12; }
 
   .aether_product_pg #about_zeus,
   .aether_product_pg .section_2 {
@@ -1586,8 +1589,9 @@ a {
   .aether_product_pg .section_1 .grid_quart.second,
   .aether_product_pg .section_1 .grid_quart.third,
   .aether_product_pg .section_1 .grid_quart.fourth {
-    height: auto;
-    overflow: auto; }
+    height: 400px;
+    overflow: auto;
+    border-bottom: 1px solid #a8eb12; }
 
   .aether_product_pg .section_1 .grid_quart .well {
     position: inherit;
@@ -1595,7 +1599,8 @@ a {
 
   .aether_product_pg .section_1 {
     background: #051937;
-    padding-bottom: 0rem; }
+    padding-bottom: 0rem;
+    height: auto; }
 
   .aether_product_pg .section_2 .well {
     width: 100%;

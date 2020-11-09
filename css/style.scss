@@ -575,11 +575,12 @@ a {text-decoration: none;}
 	.next_page, .prev_page {display: none;}
 
 	.aether_hm_pg .grid_half:first-child,
-	.aether_hm_pg .grid_half:last-child {height: 50vh;}
+	.aether_hm_pg .grid_half:last-child {height: 45vh;}
 
 	.aether_hm_pg .grid_half:first-child .hm_pg_lft_overlay,
-	.aether_hm_pg .grid_half:last-child .hm_pg_right_overlay {height: 50vh; position: relative; padding: 2rem 0; display: flex; justify-content: center; align-items: center;}
+	.aether_hm_pg .grid_half:last-child .hm_pg_right_overlay {height: 45vh; position: relative; padding: 2rem 0; display: flex; justify-content: center; align-items: center;}
 	
+	.aether_product_pg .section_title {color: $accent;}
 	.aether_product_pg #about_zeus,
 	.aether_product_pg .section_2 {height: auto; position: relative; padding: 0rem 0; display: flex; justify-content: center; align-items: center;}
 
@@ -591,10 +592,10 @@ a {text-decoration: none;}
 	.aether_product_pg .section_1 .grid_quart.first,
 	.aether_product_pg .section_1 .grid_quart.second,
 	.aether_product_pg .section_1 .grid_quart.third,
-	.aether_product_pg .section_1 .grid_quart.fourth {height: auto; overflow: auto;}
+	.aether_product_pg .section_1 .grid_quart.fourth {height: 400px; overflow: auto; border-bottom: 1px solid $accent;}
 
 	.aether_product_pg .section_1 .grid_quart .well {position: inherit; margin: 3rem 1rem;}
-	.aether_product_pg .section_1 {background: #051937; padding-bottom: 0rem;}
+	.aether_product_pg .section_1 {background: #051937; padding-bottom: 0rem; height: auto;}
 	
 	.aether_product_pg .section_2 .well {width: 100%; margin: 0; padding: 4rem 1rem 10rem; text-align: center;}
 	.aether_product_pg .section_2 .well .section_text {width: 100%;}
