@@ -575,10 +575,10 @@ a {text-decoration: none;}
 	.next_page, .prev_page {display: none;}
 
 	.aether_hm_pg .grid_half:first-child,
-	.aether_hm_pg .grid_half:last-child {height: 45vh;}
+	.aether_hm_pg .grid_half:last-child {height: 47vh;}
 
 	.aether_hm_pg .grid_half:first-child .hm_pg_lft_overlay,
-	.aether_hm_pg .grid_half:last-child .hm_pg_right_overlay {height: 45vh; position: relative; padding: 2rem 0; display: flex; justify-content: center; align-items: center;}
+	.aether_hm_pg .grid_half:last-child .hm_pg_right_overlay {height: 47vh; position: relative; padding: 2rem 0; display: flex; justify-content: center; align-items: center;}
 	
 	.aether_product_pg .section_title {color: $accent;}
 	.aether_product_pg #about_zeus,

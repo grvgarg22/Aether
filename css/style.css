@@ -1548,11 +1548,11 @@ a {
 
   .aether_hm_pg .grid_half:first-child,
   .aether_hm_pg .grid_half:last-child {
-    height: 45vh; }
+    height: 47vh; }
 
   .aether_hm_pg .grid_half:first-child .hm_pg_lft_overlay,
   .aether_hm_pg .grid_half:last-child .hm_pg_right_overlay {
-    height: 45vh;
+    height: 47vh;
     position: relative;
     padding: 2rem 0;
     display: flex;
